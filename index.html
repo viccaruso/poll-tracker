@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
-    <title>Document</title>
+    <title>Poll Tracker</title>
 </head>
 
 <body>
@@ -20,11 +20,38 @@
     </header>
     <main>
         <section class="main-section">
-            <div id='left'>
-
+            <div id='top-row'>
+                <div id='current-poll-div'>
+                    <p id='current-poll-title'> Current Poll Title</p>
+                    <p><span id='option-a-title'>--</span> <span id='option-a-vote-count'></span></p>
+                    <button id='option-a-plus'>+</button>
+                    <button id='option-a-minus'>-</button>
+                    <p><span id='option-b-title'>--</span> <span id='option-b-vote-count'></span></p>
+                    <button id='option-b-plus'>+</button>
+                    <button id='option-b-minus'>-</button><br>
+                    <button id='end-poll-button'>End Poll</button>
+                </div>
+                
+                <div id='new-poll-div'>
+                    <form>
+                            <label>
+                                Poll question
+                                <input name="poll-question" />
+                            </label>
+                            <label>
+                                Option 1
+                                <input name="poll-option-1" />
+                            </label>
+                            <label>
+                                Option 2
+                                <input name="poll-option-2" />
+                            </label>
+                            <button id='start-poll-button'>Start Poll</button>
+                    </form>
+                </div>
             </div>
-            <div id='right'>
-
+            <div id='bottom-row'>
+                Past Polls
             </div>
         </section>
     </main>
