@@ -63,6 +63,11 @@ endPollButton.addEventListener('click', () => {
 
     resetState();
 
+    optionAVoteCountEl.textContent = '';
+    optionBVoteCountEl.textContent = '';
+    optionATitleEl.textContent = '--';
+    optionBTitleEl.textContent = '--';
+    
     displayCurrentPoll();
 
     displayAllPolls();
@@ -102,6 +107,5 @@ function displayAllPolls() {
         const pollDiv = renderPoll(poll);
         pastPollsEl.append(pollDiv);
     }
-    
 
 }
