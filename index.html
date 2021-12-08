@@ -21,6 +21,23 @@
     <main>
         <section class="main-section">
             <div id='top-row'>
+                <div id='new-poll-div'>
+                    <form>
+                            <label>
+                                Poll question
+                                <input name="poll-question" />
+                            </label>
+                            <label>
+                                Option 1
+                                <input name="poll-option-a" />
+                            </label>
+                            <label>
+                                Option 2
+                                <input name="poll-option-b" />
+                            </label>
+                            <button id='start-poll-button'>Start Poll</button>
+                    </form>
+                </div>
                 <div id='current-poll-div'>
                     <p id='current-poll-title'> Current Poll Title</p>
                     <p><span id='option-a-title'>--</span> <span id='option-a-vote-count'></span></p>
@@ -31,27 +48,9 @@
                     <button id='option-b-minus'>-</button><br>
                     <button id='end-poll-button'>End Poll</button>
                 </div>
-                
-                <div id='new-poll-div'>
-                    <form>
-                            <label>
-                                Poll question
-                                <input name="poll-question" />
-                            </label>
-                            <label>
-                                Option 1
-                                <input name="poll-option-1" />
-                            </label>
-                            <label>
-                                Option 2
-                                <input name="poll-option-2" />
-                            </label>
-                            <button id='start-poll-button'>Start Poll</button>
-                    </form>
-                </div>
             </div>
             <div id='bottom-row'>
-                Past Polls
+                <div id='past-polls-div'> Past Polls </div>
             </div>
         </section>
     </main>
