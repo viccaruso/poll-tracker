@@ -1,4 +1,6 @@
 // Import functions and grab DOM elements
+import { renderPoll } from './renders.js';
+
 const addVoteAButton = document.querySelector('#option-a-plus');
 const minusVoteAButton = document.querySelector('#option-a-minus');
 const addVoteBButton = document.querySelector('#option-b-plus');
@@ -92,12 +94,14 @@ function resetState() {
 }
 
 function displayAllPolls() {
-    while (pastPollsEl.firstChild()) {
+    while (pastPollsEl.firstChild) {
         pastPollsEl.firstChild.remove();
     }
 
-    for (let poll in pastPollsArr) {
+    for (let poll of pastPollsArr) {
         const pollDiv = renderPoll(poll);
-    };
+        pastPollsEl.append(pollDiv);
+    }
+    
 
 }
