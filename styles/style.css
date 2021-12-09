@@ -98,28 +98,69 @@ footer {
 #top-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 300px;
-    width: 100%;
-    border: 1px solid blue;
-}
-
-#current-poll-div, #new-poll-div {
     height: 100%;
     width: 100%;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    width 100%;
+#bottom-row {
+    height: 100%;
+    width: 100%;
 }
 
-#bottom-row {
+#new-poll-div form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 500px;
     width: 100%;
-    height: 300px;
-    border: 1px solid black;
+}
+
+#current-poll-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#current-poll-div p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.counter {
+    margin-left: 20px;
+}
+
+#past-polls-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 3em;
+    flex-wrap: wrap;
+}
+
+.past-poll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
+    margin: 10px 10px 10px 10px;
+    min-width: 150px;
+    width: fit-content;
+}
+
+.past-poll p {
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 button {
-    width: fit-content;
+    min-width: 3em;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 1em;
 }
